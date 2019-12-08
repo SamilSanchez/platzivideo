@@ -1,35 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <base href="/">
-    <title>Document</title>
+    <title>Leonidas Esteban</title>
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ol>
-                <li>
-                    <a>Portafolio</a>
-                </li>
-                <li>
-                    <a>Experiencia</a>
-                </li>
-                <li>
-                    <a>Trabajemos Juntos</a>
-                </li>
-            </ol>
-        </nav>
+    <header class="header">
+        <div>
+            <figure class="logo">
+                <img src="images/logo.png" alt="Logo de http://leonidasesteban.com">
+            </figure>
+            <nav class="menu">
+                <ol>
+                    <li>
+                        <a href="#portafolio">Portafolio</a>
+                    </li>
+                    <li>
+                        <a href="#eventos">Experiencia</a>
+                    </li>
+                    <li>
+                        <a href="#contacto">Trabajemos Juntos</a>
+                    </li>
+                </ol>
+            </nav>
+        </div>
     </header>
-    <section>
-        <h1> Hola! Soy <strong>Samil Sanchez Desarrollador</strong>  <br/> <strong>Python</strong> con <br/> pasión por la enseñanza.</h1>
-        <img src="" alt=""> Imagen de Portada
+    <section class="hero">
+        <h1> 
+            Hola! Soy <strong>Samil Sanchez Desarrollador</strong>  <br/> <strong>Python</strong> con <br/> pasión por la enseñanza.
+        </h1>
+        <img src="images/hero.jpg" width="500" height="300" alt="imagen principal del sitio web"> Imagen de Portada
     </section>
-    <section>Sección portafolio</section>
-    <section>Sección eventos</section>
-    <section>Sección contactos</section>
-    <footer>footer</footer>
+    <section id="portafolio" class="portfolio">
+        <h2>Portafolio (Proyectos Destacados)</h2>
+        <article class="project">
+            <h3 class="project-title">Platzi Video</h3>
+            <h6 class="project-course">React Native / React</h6>
+            <p class="project-date"><small><strong>Fecha:</strong> 01/07/2018</small></p>
+            <p class="project-url"><small><strong>Puedes verlo en:</strong> www.platzi.com/native</small></p>
+            <p class="project-description">Platzi Video fue el resultado de 3 mese de trabajo
+                para crear la mejor app para enseñar el funcionamiento
+                de React y React Native. Desde crear una vista-detalle, 
+                hasta patrones avanzados de navegacion, este proyecto ha sido el ejemplo 
+                de futuros creadores de apliaciones multiplataforma.
+            </p>
+            <figure class="project-imageContainer">
+                <img class="ptoject-image" src="images/platzi-video-react-native.png" width="500" alt="proyecto dle curso de Reac Native">
+            </figure>
+        </article>        
+    </section>
+    <section id="eventos">
+        <h2>Mas sobre mi expericiencia</h2>
+        <article class="event">
+            <figure class="event-imageContainer">
+                <img class="event-image" src="images/platzi-conf.jpg" width="500" alt=""/>
+            </figure>
+            <h3 class="event-title">PlatziConf Mexico 2018</h3>
+            <p class="event-description">El evento mas grande sobre gente que quiere aprender mas de internet.
+                 En este evento tener una vida de constante aprendizaje
+            </p>
+            <a class="event-url" href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">Ver Platica</a>
+        </article>
+    </section>
+    <section id="contacto" class="contact">
+        <form action="/suscripcion/" class="form-email" method="post">
+            <h3>¿Creamos algo Juntos?</h3>
+            <input type="text" placeholder="Dejame tu email" id="email">
+            <button>Enviar</button>
+        </form>
+    </section>
+    <footer class="footer">footer</footer>
 </body>
 </html>

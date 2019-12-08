@@ -1,0 +1,45 @@
+/* 
+    Reglas de css:
+        Ejemplo: 
+        header {
+            background: pink;
+        }
+
+    Selectores:
+        Ejemplo: header {}
+
+    declaraciones:
+        Ejemplo: 
+        {
+            background: pink;
+        }
+
+    Propiedades:
+        Ejemplo: background
+
+    Valores:
+
+        Ejemplo: pink
+
+    Selector de etiqueta:
+        Ejemplo
+        header {}
+        body {}
+        a {}
+        p {}
+    
+    Selector descendente 
+        Ejemplo:
+        body header div nav ol li a {}
+    
+    Selector de clases
+        .link {}
+    
+    Selector de id 
+        #portafolio {}
+
+*/
+
+header {
+    background: pink;
+}
