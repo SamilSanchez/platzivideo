@@ -45,6 +45,42 @@
 /* background gris = #1b2127 */
 /* celeste = #026fff */
 
+/* Tipos de Display 
+   none: Oculta el elemento.
+   block: ocupa todo el ancho disponible.
+   inline: se despliega una caja al lado de otra.
+   inline-block: respeta el archo del elemento.
+   flex
+*/
+.flexbox {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+} 
+
+.box {
+    flex-shrink: 0;    
+}
+
+.box_1 {
+    align-self: flex-start;
+}
+
+.box_2 {
+    align-self: center;
+}
+
+.box_3 {
+    align-self: flex-end;
+}
+
+ /* flex-shrink: 0 y 1 
+    0: mantiene el tamaño de la caja 
+    1: no mantiene el tamaño de la caja 
+ */
+ /* Hay un cruso especialidado en grid en platzi */
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
